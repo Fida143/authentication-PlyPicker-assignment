@@ -1,0 +1,9 @@
+{
+  "/login/page": "app/login/page.js",
+  "/api/users/login/route": "app/api/users/login/route.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/api/product/route": "app/api/product/route.js",
+  "/api/users/logout/route": "app/api/users/logout/route.js",
+  "/api/product/[_id]/route": "app/api/product/[_id]/route.js",
+  "/products/[_id]/page": "app/products/[_id]/page.js"
+}
