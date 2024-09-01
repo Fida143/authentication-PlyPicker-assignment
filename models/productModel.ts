@@ -1,12 +1,12 @@
 // models/Product.ts
 import mongoose, { Schema, Document } from 'mongoose';
 
-export interface IProduct extends Document {
-  name: string;
-  description: string;
-  price: number;
-  imageUrl: string;
-}
+// export interface IProduct extends Document {
+//   name: string;
+//   description: string;
+//   price: number;
+//   imageUrl: string;
+// }
 
 const ProductSchema: Schema = new Schema({
   name: {
@@ -30,5 +30,6 @@ const ProductSchema: Schema = new Schema({
   },
 });
 
-const Product = mongoose.models.Product || mongoose.model<IProduct>('Product', ProductSchema);
+// const Product = mongoose.models.Product || mongoose.model<IProduct>('Product', ProductSchema);
+const Product = mongoose.models.Product || mongoose.model('Product', ProductSchema);
 export default Product;
