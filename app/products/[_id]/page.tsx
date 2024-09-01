@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-const productDetails = ({ params }: { params: { _id: string } }) => {
+const ProductDetails = ({ params }: { params: { _id: string } }) => {
   const [productDetails, setProductDetails] = useState<any>({
     name: "",
     description: "",
@@ -127,4 +127,4 @@ const productDetails = ({ params }: { params: { _id: string } }) => {
   );
 };
 
-export default productDetails;
+export default ProductDetails;
