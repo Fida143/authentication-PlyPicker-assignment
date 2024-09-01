@@ -1,14 +1,14 @@
 "use client"
 import { useState } from 'react';
 // import { IProduct } from '../models/Product';
-import { IProduct } from '../../models/productModel';
+// import { IProduct } from '../../models/productModel';
 
-interface ProductPageProps {
-  product: IProduct;
-}
+// interface ProductPageProps {
+//   product: IProduct;
+// }
 
-const ProductPage: React.FC<ProductPageProps> = (props) => {
-  console.log(product,'pro')
+// const ProductPage: React.FC<ProductPageProps> = (props) => {
+const ProductPage = (props:any) => {
 
 
 
