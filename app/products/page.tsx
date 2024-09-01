@@ -7,7 +7,7 @@ interface ProductPageProps {
   product: IProduct;
 }
 
-const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
+const ProductPage: React.FC<ProductPageProps> = (props) => {
   console.log(product,'pro')
 
 
@@ -70,11 +70,11 @@ const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
           Submit Changes for Approval
         </button>
       </form> */}
-       <div><img className="w-32 h-32 mb-4 bg-gray-800 rounded" src={product.imageUrl} alt={product.name} /></div>
+       <div><img className="w-32 h-32 mb-4 bg-gray-800 rounded" src={props.product.imageUrl} alt={props.product.name} /></div>
        <div>
-        <h2 className='capitalize text-xl font-semibold'>{product.name}</h2>
-        <p className='text-gray-500'>{product.description}</p>
-        <span>$ {product.price}</span>
+        <h2 className='capitalize text-xl font-semibold'>{props.product.name}</h2>
+        <p className='text-gray-500'>{props.product.description}</p>
+        <span>$ {props.product.price}</span>
        </div>
     </div>
     </>
