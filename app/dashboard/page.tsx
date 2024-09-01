@@ -146,7 +146,7 @@ const Dashboard = () => {
           <h2 className="text-2xl font-semibold my-8 ml-4">All Product</h2>
           {products.map((product: any) => (
      
-        <Link href={`/products/${product._id}`} >
+        <Link href={`/products/${product._id}`} key={product._id} >
             <ProductPage product={product} />
         </Link>
           ))}
